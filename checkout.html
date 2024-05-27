@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asili Herbs & Supplements</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Links -->
+  <script src="https://kit.fontawesome.com/a798643e01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Checkout Section -->
+    <section id="checkout" >
+        <div class="container">
+            <h2 class="text-center mb-4">Checkout</h2>
+            <form id="checkoutForm" novalidate>
+                <div class="row">
+                    <!-- Billing Details -->
+                    <div class="col-md-6">
+                        <h3>Billing Details</h3>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                            <div class="invalid-feedback">First Name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country/Region</label>
+                            <input type="text" class="form-control" id="country" required>
+                            <div class="invalid-feedback">Country/Region is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Town/City</label>
+                            <input type="text" class="form-control" id="city" required>
+                            <div class="invalid-feedback">Town/City is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                            <div class="invalid-feedback">Phone number is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderNotes">Order Notes</label>
+                            <textarea class="form-control" id="orderNotes" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <!-- Your Order -->
+                    <div class="col-md-6">
+                        <h3>Your Order</h3>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                <div>
+                                    <h6 class="my-0">Product Name</h6>
+                                    <small class="text-muted">Brief description</small>
+                                </div>
+                                <span class="text-muted">$20</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total (USD)</span>
+                                <strong>$20</strong>
+                            </li>
+                        </ul>
+
+                        <h4>Payment Method</h4>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="cashOnDelivery" value="cash" required>
+                                <label class="form-check-label" for="cashOnDelivery">
+                                    Cash on Delivery
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="orderViaWhatsApp" value="whatsapp" required>
+                                <label class="form-check-label" for="orderViaWhatsApp">
+                                    Order via WhatsApp
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">Please select a payment method.</div>
+                        </div>
+
+                        <a href="https://wa.me/0793374200" target="_blank" type="submit" class="btn btn-primary btn-block">Place Order</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+   <footer class="py-4 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Important Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="terms.html" class="text-white">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-white">Cookies Policy</a></li>
+                    <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><span class="text-white">Phone: +254 793 374 200</span></li>
+                    <li><span class="text-white">Email: Asilisupplements@gmail.com</span></li>
+                    <li><span class="text-white">Opening Hours: 24 Hrs</span></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <p class="text-center mb-0">&copy; 2024 Asili Herbs & Supplements labs. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS for Form Validation -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>
